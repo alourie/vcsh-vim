@@ -205,6 +205,7 @@ fun! SetupVAM()
   " Tell VAM which plugins to fetch & load:
   call vam#ActivateAddons([
               \         'github:Lokaltog/vim-powerline',
+              \         'github:Lokaltog/vim-distinguished',
               \         'github:jiangmiao/auto-pairs',
               \         'github:altercation/vim-colors-solarized',
               \         'github:tpope/vim-fugitive',
@@ -259,8 +260,8 @@ set t_Co=256
 set background=dark
 if !has("gui_running")
     ""set t_Co=16
-    "colorscheme distinguished
-    colorscheme solarized
+    colorscheme distinguished
+    "colorscheme solarized
 else
     set guioptions-=T
     set guioptions-=m
