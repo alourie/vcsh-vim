@@ -3,7 +3,7 @@ autocmd! bufwritepost .vimrc source %"
 
 " Python-specific stuff
 autocmd FileType python set cc=79
-"autocmd BufWritePre *.py :%s/\s\+$//e
+autocmd BufWritePre *.py :%s/\s\+$//e
 
 set nocompatible
 set encoding=utf-8
@@ -26,6 +26,7 @@ set expandtab
 set hidden
 set nobackup
 set noswapfile
+set undodir=~/.vim/undofiles/
 set undofile
 
 
@@ -210,6 +211,9 @@ fun! SetupVAM()
               \         'github:altercation/vim-colors-solarized',
               \         'github:tpope/vim-fugitive',
               \         'github:tpope/vim-unimpaired',
+              \         'github:tpope/vim-surround',
+              \         'github:tpope/vim-repeat',
+              \         'github:tpope/vim-commentary',
               \         'github:fholgado/minibufexpl.vim',
               \         'github:scrooloose/syntastic',
               \         'github:scrooloose/nerdtree',
@@ -258,15 +262,15 @@ call SetupVAM()
 " Colors are set here, because we only bring them in SetupVAM
 set t_Co=256
 set background=dark
+colorscheme solarized
 if !has("gui_running")
     ""set t_Co=16
-    colorscheme distinguished
-    "colorscheme solarized
+    "colorscheme distinguished
 else
     set guioptions-=T
     set guioptions-=m
     set guioptions-=r
-    set guifont=Droid\ Sans\ Mono\ 14
+    set guifont=Droid\ Sans\ Mono:h14
 
     set mouse=a
     set mousehide
@@ -274,5 +278,4 @@ else
 
     set lines=45
     set columns=110
-    colorscheme solarized
 endif
