@@ -2,7 +2,7 @@
 autocmd! bufwritepost .vimrc source %"
 
 " Python-specific stuff
-autocmd FileType python set cc=79
+autocmd FileType python set cc=80
 autocmd BufWritePre *.py :%s/\s\+$//e
 
 set nocompatible
