@@ -11,6 +11,7 @@ set scrolloff=1
 set sidescrolloff=5
 set display+=lastline
 
+
 " general stuff
 
 set incsearch
