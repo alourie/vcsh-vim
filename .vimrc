@@ -238,7 +238,7 @@ fun! SetupVAM()
 
   " Addons are put into vam_install_path/plugin-name directory
   " unless those directories exist. Then they are activated.
-  " Activating means adding addon dirs to rtp and do some additional
+  " Activating means adding addon dirs to rtp and do some additional awesome
   " magic
 
   " How to find addon names?
