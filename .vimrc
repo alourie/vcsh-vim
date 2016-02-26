@@ -40,7 +40,6 @@ set autoindent
 syntax on
 
 " Other stuff
-
 set showmode
 set showcmd
 set autoread
