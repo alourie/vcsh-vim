@@ -13,7 +13,6 @@ set sidescrolloff=5
 set display+=lastline
 
 " general stuff
-
 set incsearch
 set hlsearch
 set ignorecase
