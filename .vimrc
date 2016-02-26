@@ -3,6 +3,7 @@ autocmd! bufwritepost .vimrc source %"
 
 " Python-specific stuff
 autocmd FileType python set cc=79
+autocmd FileType python set commentstring=#\ %s
 autocmd BufWritePre *.py :%s/\s\+$//e
 
 set nocompatible
@@ -12,7 +13,6 @@ set sidescrolloff=5
 set display+=lastline
 
 " general stuff
-
 set incsearch
 set hlsearch
 set ignorecase
@@ -40,7 +40,6 @@ set autoindent
 syntax on
 
 " Other stuff
-
 set showmode
 set showcmd
 set autoread
